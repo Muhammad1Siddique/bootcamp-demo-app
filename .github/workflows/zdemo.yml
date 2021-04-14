@@ -1,6 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Bootcamp-demo-app
+name: Bootcamp demo App
+
+
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
@@ -18,27 +20,29 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:aamirpinger/bootcamp-2020/blob/master/src/App.js
+    steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
       - name: setup node.js envirement
         uses: actions/setup-node@v2-beta
-        with:--
+        with: 
           version: 12
+
       # Runs a set of commands using the runners shell
       - name: Github action for yarn
         uses: Borales/actions-yarn@v2.1.0
         with:
-          #yarn commend
-          cmd: install #npm install/yarn install
-          
+          #yarn command
+          cmd: install #npm install/ yarn install
+      
       - name: creating build
         run: sudo yarn build
-         
+        
       - name: installing surge
         run: npm install -g surge
         
-      -name: doploy on surge
-       run: surge ./build http://zdemo-app.surge.sh/ --token ${{ secrets.REACT_APP }}
+      - name: deploy on surage
+        run: surge ./build http://zdemo-app.surge.sh/ --token ${{ secrets.REACT_APP }}
+        
