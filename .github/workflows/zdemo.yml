@@ -23,12 +23,12 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: setup node.js enviroment
-        uses: actions/setup-node.js@v2-beta
+      - name: setup node.js envirement
+        uses: actions/setup-node@v2-beta
         with:--
           version: 12
       # Runs a set of commands using the runners shell
-      - name: Git actions for yarn
+      - name: Github action for yarn
         uses: Borales/actions-yarn@v2.1.0
         with:
           #yarn commend
