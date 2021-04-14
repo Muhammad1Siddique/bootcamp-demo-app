@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
           <h1><strong>We build Smart Web Solutions</strong></h1>
-          <h2>Service We Provide</h2>
+          <h2><strong>Service We Provide</strong></h2>
           
       </header>
       <Services offer1="App Services" offer2="Web Services" offer3="Graphic Services" offer4="Digital Marketing" offer5="Content Writing" offer6="Web Hosting"/>
