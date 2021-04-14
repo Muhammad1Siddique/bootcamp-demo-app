@@ -10,6 +10,9 @@ function App() {
           
       </header>
       <Services offer1="App Services" offer2="Web Services" offer3="Graphic Services" offer4="Digital Marketing" offer5="Content Writing" offer6="Web Hosting"/>
+    <footer>
+      <p>&copy; 2021 stepup.com.pk</p>
+    </footer>
     </div>
   );
 }
