@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-          <strong>We build Smart Web Solutions</strong>
+          <h1><strong>We build Smart Web Solutions</strong></h1>
       </header>
     </div>
   );
